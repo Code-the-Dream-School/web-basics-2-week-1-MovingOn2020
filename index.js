@@ -18,6 +18,9 @@ console.log('hello world')
  *
  * Example Output: n/a
  */
+var string1 = "De";
+var string2 = "Bug";
+console.log(`${string1}${string2}`);
 
 // TODO: ADD CODE HERE
 
@@ -32,6 +35,10 @@ console.log('hello world')
  * Example Output: "Elizabeth Thompson"
  */
 
+ var firstName = "Joshua";
+ var lastName = "Weinstein";
+ console.log(`${firstName} ${lastName}`);
+
 // TODO: ADD CODE HERE
 
 /* Challenge #3
@@ -45,6 +52,11 @@ console.log('hello world')
  *
  * Example Output: "$49.90"
  */
+var price = 99.99;
+var quantity = 5;
+var total = price * quantity;
+console.log(total);
+console.log(total.toFixed(2));
 
 // TODO: ADD CODE HERE
 
@@ -61,6 +73,15 @@ console.log('hello world')
  *
  * Example Output: "Aww! It's not sunny outside"
  */
+var weather = "Rainy";
+var message;
+
+if (weather == "Sunny") {
+    message = "Yay! It's sunny outside";
+} else {
+    message = "Aww It's not sunny outside";
+}
+console.log(message);
 
 // TODO: ADD CODE HERE
 
@@ -74,6 +95,11 @@ console.log('hello world')
  *
  * Example Output: "I called a function!"
  */
+var myFunction = () => {
+    return "myBrain is at 100%";
+}
+console.log(myFunction());
+
 
 // TODO: ADD CODE HERE
 
@@ -87,7 +113,10 @@ console.log('hello world')
  *
  * Example Output: "I called an arrow function!"
  */
-
+var myArrowFunction = () => {
+    return "I was shot by an arrow";
+}
+console.log(myFunction());
 // TODO: ADD CODE HERE
 
 /* Challenge #7
@@ -101,7 +130,12 @@ console.log('hello world')
  *
  * Example Output: "WHY AM I SCREAMING"
  */
+function stringToUpper(str) {
+    var strUpper = str.toUpperCase();
+    return strUpper;
+}
 
+console.log(stringtoUpper("example of broken arrow test"));
 // TODO: ADD CODE HERE
 
 /* Challenge #8
@@ -118,5 +152,12 @@ console.log('hello world')
  *
  * Example Output: 2, 10, 20
  */
+function multiplyByTwo(number){
+    return (number *2);
+}
+var num1 = multiplyByTwo(1);
+var num2 = multiplyByTwo(5);
+var num3 = multiplyByTwo(10);
 
+console.log(num1, num2, num3);
 // TODO: ADD CODE HERE
